@@ -197,7 +197,7 @@ class Utils
     {
         $data = self::convertConfigData('footerWidget', true);
         $opt = Helper::options();
-        $html = '<span><a href="' . $opt->siteUrl . '"> • ' . $opt->title . '</a></span><span><a href="http:\/\/www.typecho.org" title="念念不忘，必有回响。" target="_blank"> • Typecho</a></span><span><a href="https:\/\/eriri.ink/archives/Typecho-Theme-Aria.html" title="Typecho-Theme-Aria Ver ' . ARIA_VERSION . ' by Siphils" target="_blank"> • Aria</a></span>';
+        $html = '<span> • <a href="' . $opt->siteUrl . '">' . $opt->title . '</a></span><span> • <a href="http:\/\/www.typecho.org" title="念念不忘，必有回响。" target="_blank">Typecho</a></span><span> • <a href="https:\/\/eriri.ink/archives/Typecho-Theme-Aria.html" title="Typecho-Theme-Aria Ver ' . ARIA_VERSION . ' by Siphils" target="_blank">Aria</a></span>';
 
         if (!$data) {
             echo $html;
@@ -210,7 +210,7 @@ class Utils
                 $title = array_key_exists('title', $val) ? 'title="' . $val['title'] . '"' : "";
                 $target = array_key_exists('target', $val) ? 'target="' . $val['target'] . '"' : "";
                 $text = array_key_exists('text', $val) ? $val['text'] : "";
-                $html .= "<span><a $href $title $target> • $text</span>";
+                $html .= "<span> • <a $href $title $target>$text</a></span>";
             }
         }
         echo $html;
