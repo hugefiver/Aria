@@ -1,6 +1,7 @@
 {
     "theme": "Aria",
-    "version": "1.9.0",
+    "version": "1.9.1",
     "changeLog": "https://github.com/Siphils/Typecho-Theme-Aria#更新",
-    "wiki": "https://github.com/Siphils/Typecho-Theme-Aria/wiki"
+    "wiki": "https://github.com/Siphils/Typecho-Theme-Aria/wiki",
+    "updater": "https://github.com/hugefiver"
 }

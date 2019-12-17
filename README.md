@@ -5,6 +5,9 @@
 ## 使用方法  
 [Wiki](https://eriri.ink/archives/Aria-manual.html)  
 ## 更新  
+### 2019-12-17 1.9.1
+* [Hugefiver](https://github.com/hugefiver)
+* 修复底栏链接问题（`a`标签没闭合也是很神秘）
 ### 2019-2-23 1.9.0  
 * **警告：由于部分配置变量名修改，部分配置信息可能丢失，请更新前先做数据库或配置信息备份**  
 * 移除了评论框图片  
