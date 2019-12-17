@@ -7,7 +7,7 @@
 <footer id="footer" role="contentinfo">
     <?php $this->options->customFooter(); ?>
     <?php if(Utils::isEnabled('showHitokoto','AriaConfig')): ?><p id="hitokoto"></p><?php endif; ?>
-    <p id="footer-info">&copy; <span><?php echo $this->options->cpr ? $this->options->cpr : date('Y'); ?></span><?php Utils::getFooterWidget(); ?></p>
+    <p id="footer-info" style="z-index: 1">&copy; <span><?php echo $this->options->cpr ? $this->options->cpr : date('Y'); ?></span><?php Utils::getFooterWidget(); ?></p>
 </footer><!-- end #footer -->
 <?php if(Utils::isEnabled('enablePjax','AriaConfig')): ?>
 <script src="<?php $this->options->themeUrl('assets/js/jquery.pjax.min.js'); ?>"></script>
