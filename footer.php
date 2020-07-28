@@ -15,7 +15,8 @@
 <?php if(Utils::isEnabled('enableFancybox','AriaConfig')): ?>
 <script src="<?php $this->options->themeUrl('assets/js/jquery.fancybox.min.js'); ?>"></script>
 <?php endif; ?>
-<script src="<?php $this->options->themeUrl('assets/js/highlight.min.js'); ?>"></script>
+<!-- script src="<?php //$this->options->themeUrl('assets/js/highlight.min.js'); ?>"></script -->
+<script src="https://cdn.jsdelivr.net/npm/highlightjs@latest/highlight.pack.min.js" crossorigin="anonymous"></script>
 <?php if(Utils::isEnabled('enableLazyload','AriaConfig')): ?>
 <script src="<?php $this->options->themeUrl('assets/js/jquery.lazyload.min.js'); ?>"></script>
 <?php endif; ?>
